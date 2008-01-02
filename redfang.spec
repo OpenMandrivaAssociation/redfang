@@ -26,6 +26,7 @@ BuildRequires:	bluez-devel
 %if %{build_diet}
 BuildRequires:	dietlibc-devel >= 0.20-1mdk
 %endif
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Redfang v2.5 is an enhanced version of the original application
