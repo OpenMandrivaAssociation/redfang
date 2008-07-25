@@ -16,7 +16,7 @@
 Summary: 	The Bluetooth Hunter
 Name:		redfang
 Version:	2.5
-Release:	%mkrel 3
+Release:	%mkrel 5
 License:	GPL
 Group:		Networking/Other
 URL:		http://www.atstake.com/research/tools/info_gathering/
