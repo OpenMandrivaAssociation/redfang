@@ -16,12 +16,14 @@
 Summary: 	The Bluetooth Hunter
 Name:		redfang
 Version:	2.5
-Release:	%mkrel 6
+Release:	%mkrel 8
 License:	GPL
 Group:		Networking/Other
 URL:		http://www.atstake.com/research/tools/info_gathering/
 Source0:	%{name}.%{version}.tar.bz2
 Patch0:		%{name}-%{version}-optflags.patch
+Patch1:		%{name}-2.5-fix-format-errors.patch
+Patch2:		%{name}-2.5-fix-missing-header.patch
 BuildRequires:	bluez-devel
 %if %{build_diet}
 BuildRequires:	dietlibc-devel >= 0.20-1mdk
@@ -42,9 +44,10 @@ information about the underlying concepts of Bluetooth discovery,
 read our research report War Nibbling: Bluetooth Insecurity.)
 
 %prep
-
 %setup -q -n %{name}-%{version}
 %patch0 -p0 -b .optflags
+%patch1 -p1 -b .format
+%patch2 -p1 -b .header
 
 %build
 
