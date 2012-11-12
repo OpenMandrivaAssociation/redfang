@@ -1,0 +1,19 @@
+--- Makefile	2003-10-11 20:15:49.000000000 +0200
++++ Makefile.oden	2004-05-17 02:24:49.178357376 +0200
+@@ -1,5 +1,7 @@
++CC=gcc
+ OBJ=fang.o
+ EXE=fang
++CFLAGS=$(RPM_OPT_FLAGS)
+ 
+ DEPS=list.h
+ 
+@@ -8,7 +10,7 @@
+ all: $(EXE)
+ 
+ $(EXE): $(OBJ) $(DEPS)
+-	cc -o $(EXE) $(OBJ) $(LIBS)
++	$(CC) $(RPM_OPT_FLAGS) -o $(EXE) $(OBJ) $(LIBS)
+ 
+ clean:
+ 	rm -f $(EXE) $(OBJ) *~

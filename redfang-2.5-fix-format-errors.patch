@@ -1,0 +1,12 @@
+diff -Naur redfang-2.5/fang.c redfang-2.5-fix-format-errors/fang.c
+--- redfang-2.5/fang.c	2003-10-15 05:59:20.000000000 +0200
++++ redfang-2.5-fix-format-errors/fang.c	2009-03-03 12:17:42.000000000 +0100
+@@ -99,7 +99,7 @@
+    printf("Valid manf codes are:\n");
+    for (i=0; manf[i].name; i++) {
+       printf("\t%-15s %-8s", manf[i].name, manf[i].addr);
+-      if (manf[i].desc) printf(manf[i].desc);
++      if (manf[i].desc) printf("%s",manf[i].desc);
+       printf("\n");
+    }
+ }

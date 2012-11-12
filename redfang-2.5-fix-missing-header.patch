@@ -1,0 +1,11 @@
+diff -Naur redfang-2.5/fang.c redfang-2.5-fix-missing-header/fang.c
+--- redfang-2.5/fang.c	2003-10-15 05:59:20.000000000 +0200
++++ redfang-2.5-fix-missing-header/fang.c	2009-03-03 12:21:47.000000000 +0100
+@@ -45,6 +45,7 @@
+ #include <sys/socket.h>
+ #include <asm/types.h>
+ #include <netinet/in.h>
++#include <linux/limits.h>
+ 
+ #include <bluetooth/bluetooth.h>
+ #include <bluetooth/hci.h>
