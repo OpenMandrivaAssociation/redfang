@@ -75,3 +75,42 @@ install -m644 fang.1 %{buildroot}%{_mandir}/man1/
 %doc CHANGELOG INSTALL OTHERS README
 %{_bindir}/fang
 %{_mandir}/man1/fang.1*
+
+
+%changelog
+* Tue Sep 15 2009 Thierry Vignaud <tvignaud@mandriva.com> 2.5-9mdv2010.0
++ Revision: 442672
+- rebuild
+
+* Tue Mar 03 2009 Guillaume Rousse <guillomovitch@mandriva.org> 2.5-8mdv2009.1
++ Revision: 347712
+- rebuild for latest bluez libs
+- fix format errors
+- fix build error
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - rebuild
+    - rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 2.5-3mdv2008.1
++ Revision: 140744
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sun Aug 19 2007 Oden Eriksson <oeriksson@mandriva.com> 2.5-3mdv2008.0
++ Revision: 66680
+- Import redfang
+
+
+
+* Fri Jul 14 2006 Oden Eriksson <oeriksson@mandriva.com> 2.5-3mdv2007.0
+- rebuild
+
+* Fri Jun 03 2005 Oden Eriksson <oeriksson@mandriva.com> 2.5-2mdk
+- rebuild
+
+* Mon May 17 2004 Oden Eriksson <oeriksson@mandrakesoft.com> 2.5-1mdk
+- initial cooker contrib
+- added P0
