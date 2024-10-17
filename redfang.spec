@@ -19,7 +19,7 @@ Version:	2.5
 Release:	10
 License:	GPL
 Group:		Networking/Other
-URL:		http://www.atstake.com/research/tools/info_gathering/
+URL:		https://www.atstake.com/research/tools/info_gathering/
 Source0:	%{name}.%{version}.tar.bz2
 Patch0:		%{name}-%{version}-optflags.patch
 Patch1:		%{name}-2.5-fix-format-errors.patch
