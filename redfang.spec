@@ -24,6 +24,7 @@ Source0:	%{name}.%{version}.tar.bz2
 Patch0:		%{name}-%{version}-optflags.patch
 Patch1:		%{name}-2.5-fix-format-errors.patch
 Patch2:		%{name}-2.5-fix-missing-header.patch
+BuildRequires:	make
 BuildRequires:	bluez-devel
 %if %{build_diet}
 BuildRequires:	dietlibc-devel >= 0.20-1mdk
